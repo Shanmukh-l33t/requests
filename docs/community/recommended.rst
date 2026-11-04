@@ -35,12 +35,19 @@ requested by users within the community.
 .. _Requests-Toolbelt: https://toolbelt.readthedocs.io/en/latest/index.html
 
 
-Requests-Threads
-----------------
+txrequests
+----------
 
-`Requests-Threads`_ is a Requests session that returns the amazing Twisted's awaitable Deferreds instead of Response objects. This allows the use of ``async``/``await`` keyword usage on Python 3, or Twisted's style of programming, if desired.
+`txrequests`_ is a Requests session that returns Twisted's awaitable Deferreds instead of Response objects. This allows the use of ``async``/``await`` keyword usage on Python 3, or Twisted's style of programming, if desired.
 
-.. _Requests-Threads: https://github.com/requests/requests-threads
+.. _txrequests: https://pypi.org/project/txrequests/
+
+gevent-requests
+---------------
+
+`gevent-requests`_ runs requests concurrently on gevent green threads. It is a fork of ``grequests``, which superseded the ``requests.async`` module that was removed from Requests in 0.13.0. Note that it achieves concurrency via green threads, not native Python ``asyncio`` coroutines.
+
+.. _gevent-requests: https://pypi.org/project/gevent-requests/
 
 Requests-OAuthlib
 -----------------
